@@ -4,6 +4,12 @@
   |============================
 */
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -188,6 +194,10 @@ h1,h2,h3,h4,h5,h6,p {
     padding: 188px 0;
 }
 
+.modal {
+    width: 100%;
+}
+
 .hero-container {
 
 }
@@ -265,6 +275,7 @@ h1,h2,h3,h4,h5,h6,p {
     color: #ffffff;
     background-color: #404BBF;
     border: 1px solid transparent;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 /**
@@ -283,6 +294,13 @@ h1,h2,h3,h4,h5,h6,p {
     gap: 24px;
     margin-right: 24px;
     margin-right: 0; 
+}
+
+.features-icon {
+    border-radius: 4px;
+    background-color: var(--title-background);
+    width: 64px;
+    
 }
 
 .feautures-item {
@@ -375,13 +393,27 @@ h1,h2,h3,h4,h5,h6,p {
 
   }
 
-  .team-item {
-  background-color: #FFFFFF;
-  width: calc((100% - 72px) / 4);
-  border-radius: 0px 0px 4px 4px;
+.team-item {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.team-image {}
+.designers-team-icon {
+        border-radius: 50%;
+        gap: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 16px;
+        height: 16px;
+}
+
+.designers-team-container {
+ 
+}
 
 .designers-team-title {
     font-family: "Roboto",sans-serif;
@@ -395,7 +427,7 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom: 8px
   }
 
-.team-prgrph {
+.designers-team-par {
     font-family: 'Roboto';
     font-weight: 400;
     font-size: 16px;
@@ -421,6 +453,10 @@ h1,h2,h3,h4,h5,h6,p {
 
 .project-item {
     width: calc((100% - 48px) / 3);
+}
+
+.project-item:hover {
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .project-container {
@@ -449,6 +485,35 @@ h1,h2,h3,h4,h5,h6,p {
     letter-spacing: 0.02em;
     color: #434455;
 }
+
+/**
+  |============================
+  | Customers styles
+  |============================
+*/
+
+.customers-title {
+text-align: center;
+font-size: 36px;
+font-family: Roboto;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0.72px;
+text-transform: capitalize;
+}
+
+.customers-item {
+display: inline-flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.customers-icon {
+width: 104px;
+    height: 56px;
+    flex-shrink: 0;
+}
+
 
 /**
   |============================
