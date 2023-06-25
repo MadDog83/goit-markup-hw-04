@@ -420,6 +420,10 @@ h1,h2,h3,h4,h5,h6,p {
     height: 40px;
 }
 
+.designers-team-icon {
+    fill: var(--title-background);
+}
+
 .designers-team-link {
     width: 100%;
     height: 100%;
@@ -568,9 +572,41 @@ padding-bottom: 120px;
   | Footer styles
   |============================
 */
+
+.footer-container {
+    display: flex;
+    align-items: baseline,
+}
+
 .footer {
     background-color: #2E2F42;
     padding: 100px 0;
+}
+
+.footer-list {
+    display: flex;
+    gap: 16px;
+
+}
+
+.footer-item {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-link {
+    width: 100%;
+    height: 100%;
+    background-color: var(--logo-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-icon { 
+    fill: var(--title-background);
 }
 
 .footer-logo {
@@ -578,12 +614,18 @@ padding-bottom: 120px;
     margin-bottom: 16px;
 }
 
-.footer-prgrph {
+.footer-logo-par {
+    margin-right: 120px;
+}
+
+.footer-par {
     font-family: "Roboto",sans-serif;
-    font-weight: 400;
+    font-weight: 500;
+    color: var(--page-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #F4F4FD;
-    max-width: 264px
+    max-width: 264px; 
+    content: Social media;
+    margin-bottom: 16px;
 }
