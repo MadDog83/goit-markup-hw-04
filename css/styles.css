@@ -618,18 +618,25 @@ h1,h2,h3,h4,h5,h6,p {
     margin-bottom: 16px;
 }
 
-.footer-social {
+.logo-par {
     margin-right: 120px;
 }
 
-.footer-par {
-    font-family: "Roboto",sans-serif;
+.par-social {
     font-weight: 500;
-    color: var(--page-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    max-width: 264px; 
-    content: Social media;
+    color: var(--page-color);
     margin-bottom: 16px;
+}
+
+.footer-par {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #F4F4FD;
+    max-width: 264px
 }
