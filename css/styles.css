@@ -47,8 +47,9 @@ h1,h2,h3,h4,h5,h6,p {
 :root {
   --page-color: #ffffff;
   --logo-color: #4D5AE5;
-  --hero-background: #2E2F42;
+  --text-color: #2E2F42;
   --title-background: #f4f4fd;
+  --link-color: #8e8f99;
  }
 
     /*Base styles*/
@@ -351,14 +352,12 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .webstudio-title {
-    font-family: "Roboto",sans-serif;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
     text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--text-color);
     margin-bottom: 72px;
 }
 
@@ -388,14 +387,11 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .team-title {
-    font-family: "Roboto",sans-serif;
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-align: center;
-    text-transform: capitalize;
-    color: #2E2F42;
+    color: var(--text-color);
     background-color: #F4F4FD;
     margin-bottom: 72px;
 }
@@ -518,27 +514,52 @@ h1,h2,h3,h4,h5,h6,p {
   | Customers styles
   |============================
 */
+.customers {
+padding-bottom: 120px;
+}
 
 .customers-title {
-text-align: center;
-font-size: 36px;
-font-family: Roboto;
-font-weight: 700;
-line-height: 40px;
-letter-spacing: 0.72px;
-text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.72px;
+    color: var(--text-color);
+    margin-bottom: 72px;
+
 }
 
 .customers-item {
-display: inline-flex;
-    align-items: flex-start;
+    width: calc((100% - 120px) / 6);
+    height: 88px;
+
+}
+
+.customers-list {
+    display: flex;
     gap: 24px;
 }
 
+.customers-link {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(-link-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border-color: #404bbf;
+    color: #404bbf;
+}
+
 .customers-icon {
-width: 104px;
-    height: 56px;
-    flex-shrink: 0;
+    fill: currentColor;
 }
 
 
