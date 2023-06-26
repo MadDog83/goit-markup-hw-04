@@ -438,7 +438,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 .designers-team-link:hover,
 .designers-team-link:focus {
-    background-color: #404bbf;
+    background-color: var(--link-color2);
 }
 
 .designers-team-container {
