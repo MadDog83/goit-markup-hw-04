@@ -4,12 +4,6 @@
   |============================
 */
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    
-}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -155,6 +149,16 @@ h1,h2,h3,h4,h5,h6,p {
     padding: 24px 0;
     position: relative;
     color: var(--link-color2);
+}
+
+.header-link::after {
+    content:none;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
 }
 
 .header-link:hover,
