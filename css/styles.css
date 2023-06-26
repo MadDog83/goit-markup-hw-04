@@ -243,6 +243,7 @@ h1,h2,h3,h4,h5,h6,p {
 .hero-btn:hover,
 .hero-btn:focus {
     background: #404BBF;
+    background-color: #404bbf;
     border: none;
 }
 
