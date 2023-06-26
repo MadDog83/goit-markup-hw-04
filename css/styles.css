@@ -152,7 +152,7 @@ h1,h2,h3,h4,h5,h6,p {
 }
 
 .header-link::after {
-    content:none;
+    content:unset;
     position: absolute;
     left: 0;
     bottom: -1px;
